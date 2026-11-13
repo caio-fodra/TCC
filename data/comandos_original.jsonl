@@ -1,0 +1,100 @@
+{"id": "orig-001", "texto": "navigate to the bed", "template": "goToLoc", "gabarito": {"acao": "go_to", "destino": "bed"}}
+{"id": "orig-002", "texto": "take a peach from the shelf", "template": "takeObjFromPlcmt", "gabarito": {"acao": "take", "objeto": "peach", "origem": "shelf"}}
+{"id": "orig-003", "texto": "find a person pointing to the right in the living room", "template": "findPrsInRoom", "gabarito": {"acao": "find_person", "pessoa": "person pointing to right", "local": "living room"}}
+{"id": "orig-004", "texto": "find a red wine in the kitchen", "template": "findObjInRoom", "gabarito": {"acao": "find_object", "objeto": "red wine", "local": "kitchen"}}
+{"id": "orig-005", "texto": "meet Robin in the bathroom", "template": "meetPrsAtBeac", "gabarito": {"acao": "meet", "pessoa": "robin", "local": "bathroom"}}
+{"id": "orig-006", "texto": "tell me how many dishes there are on the shelf", "template": "countObjOnPlcmt", "gabarito": {"acao": "count_objects", "objeto": "dish", "local": "shelf"}}
+{"id": "orig-007", "texto": "tell me how many sitting persons are in the living room", "template": "countPrsInRoom", "gabarito": {"acao": "count_people", "pessoa": "sitting person", "local": "living room"}}
+{"id": "orig-008", "texto": "tell me the gesture of the person at the sofa", "template": "tellPrsInfoInLoc", "gabarito": {"acao": "tell_person_info", "local": "sofa", "informacao": "gesture"}}
+{"id": "orig-009", "texto": "tell me what is the biggest object on the sofa", "template": "tellObjPropOnPlcmt", "gabarito": {"acao": "tell_object_property", "local": "sofa", "atributo": "biggest"}}
+{"id": "orig-010", "texto": "say what day is today to the person pointing to the left in the office", "template": "talkInfoToGestPrsInRoom", "gabarito": {"acao": "talk_info", "pessoa": "person pointing to left", "local": "office", "informacao": "what day is today"}}
+{"id": "orig-011", "texto": "follow Axel from the potted plant to the office", "template": "followNameFromBeacToRoom", "gabarito": {"acao": "follow", "pessoa": "axel", "origem": "potted plant", "destino": "office"}}
+{"id": "orig-012", "texto": "take Angel from the cabinet to the refrigerator", "template": "guideNameFromBeacToBeac", "gabarito": {"acao": "guide", "pessoa": "angel", "origem": "cabinet", "destino": "refrigerator"}}
+{"id": "orig-013", "texto": "guide the sitting person from the side tables to the bathroom", "template": "guidePrsFromBeacToBeac", "gabarito": {"acao": "guide", "pessoa": "sitting person", "origem": "side tables", "destino": "bathroom"}}
+{"id": "orig-014", "texto": "take the person wearing a red t shirt from the shelf to the bathroom", "template": "guideClothPrsFromBeacToBeac", "gabarito": {"acao": "guide", "pessoa": "person wearing red t shirt", "origem": "shelf", "destino": "bathroom"}}
+{"id": "orig-015", "texto": "bring me a sugar from the shelf", "template": "bringMeObjFromPlcmt", "gabarito": {"acao": "deliver", "objeto": "sugar", "origem": "shelf", "destino": "me"}}
+{"id": "orig-016", "texto": "tell me what is the biggest food on the shelf", "template": "tellCatPropOnPlcmt", "gabarito": {"acao": "tell_object_property", "objeto": "food", "local": "shelf", "atributo": "biggest"}}
+{"id": "orig-017", "texto": "salute the person wearing a white t shirt in the bedroom", "template": "greetClothDscInRm", "gabarito": {"acao": "greet", "pessoa": "person wearing white t shirt", "local": "bedroom"}}
+{"id": "orig-018", "texto": "say hello to Angel in the living room", "template": "greetNameInRm", "gabarito": {"acao": "greet", "pessoa": "angel", "local": "living room"}}
+{"id": "orig-019", "texto": "meet Paris at the storage rack", "template": "meetNameAtLocThenFindInRm", "gabarito": {"acao": "meet", "pessoa": "paris", "local": "storage rack"}}
+{"id": "orig-020", "texto": "tell me how many people in the kitchen are wearing white jackets", "template": "countClothPrsInRoom", "gabarito": {"acao": "count_people", "local": "kitchen", "atributo": "white jackets"}}
+{"id": "orig-021", "texto": "tell the pose of the person at the potted plant to the person at the storage rack", "template": "tellPrsInfoAtLocToPrsAtLoc", "gabarito": {"acao": "tell_person_info", "origem": "potted plant", "destino": "storage rack", "informacao": "pose"}}
+{"id": "orig-022", "texto": "follow the lying person in the bathroom", "template": "followPrsAtLoc", "gabarito": {"acao": "follow", "pessoa": "lying person", "local": "bathroom"}}
+{"id": "orig-023", "texto": "say what day is tomorrow to the person raising their left arm in the living room", "template": "talkInfoToGestPrsInRoom", "gabarito": {"acao": "talk_info", "pessoa": "person raising their left arm", "local": "living room", "informacao": "what day is tomorrow"}}
+{"id": "orig-024", "texto": "tell me what is the thinnest dish on the shelf", "template": "tellCatPropOnPlcmt", "gabarito": {"acao": "tell_object_property", "objeto": "dish", "local": "shelf", "atributo": "thinnest"}}
+{"id": "orig-025", "texto": "greet Adel in the kitchen", "template": "greetNameInRm", "gabarito": {"acao": "greet", "pessoa": "adel", "local": "kitchen"}}
+{"id": "orig-026", "texto": "meet Angel in the kitchen", "template": "meetPrsAtBeac", "gabarito": {"acao": "meet", "pessoa": "angel", "local": "kitchen"}}
+{"id": "orig-027", "texto": "get a toy from the refrigerator", "template": "takeObjFromPlcmt", "gabarito": {"acao": "take", "objeto": "toy", "origem": "refrigerator"}}
+{"id": "orig-028", "texto": "locate a food in the bathroom", "template": "findObjInRoom", "gabarito": {"acao": "find_object", "objeto": "food", "local": "bathroom"}}
+{"id": "orig-029", "texto": "meet Charlie in the kitchen", "template": "meetPrsAtBeac", "gabarito": {"acao": "meet", "pessoa": "charlie", "local": "kitchen"}}
+{"id": "orig-030", "texto": "go to the trashbin", "template": "goToLoc", "gabarito": {"acao": "go_to", "destino": "trashbin"}}
+{"id": "orig-031", "texto": "meet Angel in the living room", "template": "meetPrsAtBeac", "gabarito": {"acao": "meet", "pessoa": "angel", "local": "living room"}}
+{"id": "orig-032", "texto": "tell me the pose of the person in the bedroom", "template": "tellPrsInfoInLoc", "gabarito": {"acao": "tell_person_info", "local": "bedroom", "informacao": "pose"}}
+{"id": "orig-033", "texto": "say your teams name to the person raising their right arm in the bedroom", "template": "talkInfoToGestPrsInRoom", "gabarito": {"acao": "talk_info", "pessoa": "person raising their right arm", "local": "bedroom", "informacao": "your teams name"}}
+{"id": "orig-034", "texto": "get a dish from the sofa", "template": "takeObjFromPlcmt", "gabarito": {"acao": "take", "objeto": "dish", "origem": "sofa"}}
+{"id": "orig-035", "texto": "go to the bathroom", "template": "goToLoc", "gabarito": {"acao": "go_to", "destino": "bathroom"}}
+{"id": "orig-036", "texto": "tell me what is the lightest object on the sofa", "template": "tellObjPropOnPlcmt", "gabarito": {"acao": "tell_object_property", "local": "sofa", "atributo": "lightest"}}
+{"id": "orig-037", "texto": "meet Simone at the refrigerator", "template": "meetNameAtLocThenFindInRm", "gabarito": {"acao": "meet", "pessoa": "simone", "local": "refrigerator"}}
+{"id": "orig-038", "texto": "tell me what is the smallest toy on the bed", "template": "tellCatPropOnPlcmt", "gabarito": {"acao": "tell_object_property", "objeto": "toy", "local": "bed", "atributo": "smallest"}}
+{"id": "orig-039", "texto": "find a red wine in the living room", "template": "findObjInRoom", "gabarito": {"acao": "find_object", "objeto": "red wine", "local": "living room"}}
+{"id": "orig-040", "texto": "tell what day is today to the person raising their left arm in the living room", "template": "talkInfoToGestPrsInRoom", "gabarito": {"acao": "talk_info", "pessoa": "person raising their left arm", "local": "living room", "informacao": "what day is today"}}
+{"id": "orig-041", "texto": "bring me a knife from the shelf", "template": "bringMeObjFromPlcmt", "gabarito": {"acao": "deliver", "objeto": "knife", "origem": "shelf", "destino": "me"}}
+{"id": "orig-042", "texto": "meet Jules in the living room", "template": "meetPrsAtBeac", "gabarito": {"acao": "meet", "pessoa": "jules", "local": "living room"}}
+{"id": "orig-043", "texto": "go to the bedroom", "template": "goToLoc", "gabarito": {"acao": "go_to", "destino": "bedroom"}}
+{"id": "orig-044", "texto": "go to the potted plant", "template": "goToLoc", "gabarito": {"acao": "go_to", "destino": "potted plant"}}
+{"id": "orig-045", "texto": "salute Angel in the bathroom", "template": "greetNameInRm", "gabarito": {"acao": "greet", "pessoa": "angel", "local": "bathroom"}}
+{"id": "orig-046", "texto": "fetch a sugar from the storage rack", "template": "takeObjFromPlcmt", "gabarito": {"acao": "take", "objeto": "sugar", "origem": "storage rack"}}
+{"id": "orig-047", "texto": "take a toy from the bed", "template": "takeObjFromPlcmt", "gabarito": {"acao": "take", "objeto": "toy", "origem": "bed"}}
+{"id": "orig-048", "texto": "meet Morgan in the living room", "template": "meetPrsAtBeac", "gabarito": {"acao": "meet", "pessoa": "morgan", "local": "living room"}}
+{"id": "orig-049", "texto": "follow the waving person at the side tables", "template": "followPrsAtLoc", "gabarito": {"acao": "follow", "pessoa": "waving person", "local": "side tables"}}
+{"id": "orig-050", "texto": "bring me a strawberry from the shelf", "template": "bringMeObjFromPlcmt", "gabarito": {"acao": "deliver", "objeto": "strawberry", "origem": "shelf", "destino": "me"}}
+{"id": "orig-051", "texto": "navigate to the chairs", "template": "goToLoc", "gabarito": {"acao": "go_to", "destino": "chairs"}}
+{"id": "orig-052", "texto": "tell me what is the heaviest cleaning supply on the sofa", "template": "tellCatPropOnPlcmt", "gabarito": {"acao": "tell_object_property", "objeto": "cleaning supply", "local": "sofa", "atributo": "heaviest"}}
+{"id": "orig-053", "texto": "go to the shelf", "template": "goToLoc", "gabarito": {"acao": "go_to", "destino": "shelf"}}
+{"id": "orig-054", "texto": "get a fork from the bed", "template": "takeObjFromPlcmt", "gabarito": {"acao": "take", "objeto": "fork", "origem": "bed"}}
+{"id": "orig-055", "texto": "tell me what is the smallest cleaning supply on the sofa", "template": "tellCatPropOnPlcmt", "gabarito": {"acao": "tell_object_property", "objeto": "cleaning supply", "local": "sofa", "atributo": "smallest"}}
+{"id": "orig-056", "texto": "grasp a toy from the shelf", "template": "takeObjFromPlcmt", "gabarito": {"acao": "take", "objeto": "toy", "origem": "shelf"}}
+{"id": "orig-057", "texto": "navigate to the side tables", "template": "goToLoc", "gabarito": {"acao": "go_to", "destino": "side tables"}}
+{"id": "orig-058", "texto": "find an orange juice in the bathroom", "template": "findObjInRoom", "gabarito": {"acao": "find_object", "objeto": "orange juice", "local": "bathroom"}}
+{"id": "orig-059", "texto": "go to the storage rack", "template": "goToLoc", "gabarito": {"acao": "go_to", "destino": "storage rack"}}
+{"id": "orig-060", "texto": "tell me what is the lightest toy on the storage rack", "template": "tellCatPropOnPlcmt", "gabarito": {"acao": "tell_object_property", "objeto": "toy", "local": "storage rack", "atributo": "lightest"}}
+{"id": "orig-061", "texto": "say your teams affiliation to the person pointing to the right in the bathroom", "template": "talkInfoToGestPrsInRoom", "gabarito": {"acao": "talk_info", "pessoa": "person pointing to right", "local": "bathroom", "informacao": "your teams affiliation"}}
+{"id": "orig-062", "texto": "navigate to the kitchen", "template": "goToLoc", "gabarito": {"acao": "go_to", "destino": "kitchen"}}
+{"id": "orig-063", "texto": "tell me how many fruits there are on the cabinet", "template": "countObjOnPlcmt", "gabarito": {"acao": "count_objects", "objeto": "fruit", "local": "cabinet"}}
+{"id": "orig-064", "texto": "tell me what is the biggest object on the bed", "template": "tellObjPropOnPlcmt", "gabarito": {"acao": "tell_object_property", "local": "bed", "atributo": "biggest"}}
+{"id": "orig-065", "texto": "tell me what is the biggest drink on the storage rack", "template": "tellCatPropOnPlcmt", "gabarito": {"acao": "tell_object_property", "objeto": "drink", "local": "storage rack", "atributo": "biggest"}}
+{"id": "orig-066", "texto": "tell the time to the person raising their left arm in the office", "template": "talkInfoToGestPrsInRoom", "gabarito": {"acao": "talk_info", "pessoa": "person raising their left arm", "local": "office", "informacao": "time"}}
+{"id": "orig-067", "texto": "escort the person wearing a yellow sweater from the chairs to the bathroom", "template": "guideClothPrsFromBeacToBeac", "gabarito": {"acao": "guide", "pessoa": "person wearing yellow sweater", "origem": "chairs", "destino": "bathroom"}}
+{"id": "orig-068", "texto": "navigate to the bathroom", "template": "goToLoc", "gabarito": {"acao": "go_to", "destino": "bathroom"}}
+{"id": "orig-069", "texto": "give me an orange juice from the bed", "template": "bringMeObjFromPlcmt", "gabarito": {"acao": "deliver", "objeto": "orange juice", "origem": "bed", "destino": "me"}}
+{"id": "orig-070", "texto": "take a dish from the bed", "template": "takeObjFromPlcmt", "gabarito": {"acao": "take", "objeto": "dish", "origem": "bed"}}
+{"id": "orig-071", "texto": "bring me a baseball from the storage rack", "template": "bringMeObjFromPlcmt", "gabarito": {"acao": "deliver", "objeto": "baseball", "origem": "storage rack", "destino": "me"}}
+{"id": "orig-072", "texto": "tell what day is today to the person pointing to the left in the kitchen", "template": "talkInfoToGestPrsInRoom", "gabarito": {"acao": "talk_info", "pessoa": "person pointing to left", "local": "kitchen", "informacao": "what day is today"}}
+{"id": "orig-073", "texto": "bring me a milk from the refrigerator", "template": "bringMeObjFromPlcmt", "gabarito": {"acao": "deliver", "objeto": "milk", "origem": "refrigerator", "destino": "me"}}
+{"id": "orig-074", "texto": "follow Jules from the sofa to the bathroom", "template": "followNameFromBeacToRoom", "gabarito": {"acao": "follow", "pessoa": "jules", "origem": "sofa", "destino": "bathroom"}}
+{"id": "orig-075", "texto": "escort the person wearing a black sweater from the entrance to the sofa", "template": "guideClothPrsFromBeacToBeac", "gabarito": {"acao": "guide", "pessoa": "person wearing black sweater", "origem": "entrance", "destino": "sofa"}}
+{"id": "orig-076", "texto": "go to the living room", "template": "goToLoc", "gabarito": {"acao": "go_to", "destino": "living room"}}
+{"id": "orig-077", "texto": "tell me what is the biggest object on the cabinet", "template": "tellObjPropOnPlcmt", "gabarito": {"acao": "tell_object_property", "local": "cabinet", "atributo": "biggest"}}
+{"id": "orig-078", "texto": "introduce yourself to Charlie in the kitchen", "template": "greetNameInRm", "gabarito": {"acao": "greet", "pessoa": "charlie", "local": "kitchen"}}
+{"id": "orig-079", "texto": "tell me what is the largest object on the shelf", "template": "tellObjPropOnPlcmt", "gabarito": {"acao": "tell_object_property", "local": "shelf", "atributo": "largest"}}
+{"id": "orig-080", "texto": "go to the office", "template": "goToLoc", "gabarito": {"acao": "go_to", "destino": "office"}}
+{"id": "orig-081", "texto": "locate a lying person in the bathroom", "template": "findPrsInRoom", "gabarito": {"acao": "find_person", "pessoa": "lying person", "local": "bathroom"}}
+{"id": "orig-082", "texto": "locate a food in the office", "template": "findObjInRoom", "gabarito": {"acao": "find_object", "objeto": "food", "local": "office"}}
+{"id": "orig-083", "texto": "say your teams affiliation to the person pointing to the right in the kitchen", "template": "talkInfoToGestPrsInRoom", "gabarito": {"acao": "talk_info", "pessoa": "person pointing to right", "local": "kitchen", "informacao": "your teams affiliation"}}
+{"id": "orig-084", "texto": "take a cup from the cabinet", "template": "takeObjFromPlcmt", "gabarito": {"acao": "take", "objeto": "cup", "origem": "cabinet"}}
+{"id": "orig-085", "texto": "tell me how many people in the bathroom are wearing white blouses", "template": "countClothPrsInRoom", "gabarito": {"acao": "count_people", "local": "bathroom", "atributo": "white blouses"}}
+{"id": "orig-086", "texto": "meet Jane in the bathroom", "template": "meetPrsAtBeac", "gabarito": {"acao": "meet", "pessoa": "jane", "local": "bathroom"}}
+{"id": "orig-087", "texto": "look for a food in the kitchen", "template": "findObjInRoom", "gabarito": {"acao": "find_object", "objeto": "food", "local": "kitchen"}}
+{"id": "orig-088", "texto": "meet Adel in the office", "template": "meetPrsAtBeac", "gabarito": {"acao": "meet", "pessoa": "adel", "local": "office"}}
+{"id": "orig-089", "texto": "tell me what is the lightest object on the side tables", "template": "tellObjPropOnPlcmt", "gabarito": {"acao": "tell_object_property", "local": "side tables", "atributo": "lightest"}}
+{"id": "orig-090", "texto": "get a tomato soup from the cabinet", "template": "takeObjFromPlcmt", "gabarito": {"acao": "take", "objeto": "tomato soup", "origem": "cabinet"}}
+{"id": "orig-091", "texto": "look for a sitting person in the kitchen", "template": "findPrsInRoom", "gabarito": {"acao": "find_person", "pessoa": "sitting person", "local": "kitchen"}}
+{"id": "orig-092", "texto": "tell me what is the largest object on the bed", "template": "tellObjPropOnPlcmt", "gabarito": {"acao": "tell_object_property", "local": "bed", "atributo": "largest"}}
+{"id": "orig-093", "texto": "tell me what is the lightest cleaning supply on the sofa", "template": "tellCatPropOnPlcmt", "gabarito": {"acao": "tell_object_property", "objeto": "cleaning supply", "local": "sofa", "atributo": "lightest"}}
+{"id": "orig-094", "texto": "fetch a bowl from the cabinet", "template": "takeObjFromPlcmt", "gabarito": {"acao": "take", "objeto": "bowl", "origem": "cabinet"}}
+{"id": "orig-095", "texto": "find an iced tea in the living room", "template": "findObjInRoom", "gabarito": {"acao": "find_object", "objeto": "iced tea", "local": "living room"}}
+{"id": "orig-096", "texto": "tell me what is the lightest snack on the bed", "template": "tellCatPropOnPlcmt", "gabarito": {"acao": "tell_object_property", "objeto": "snack", "local": "bed", "atributo": "lightest"}}
+{"id": "orig-097", "texto": "meet Angel at the coatrack", "template": "meetNameAtLocThenFindInRm", "gabarito": {"acao": "meet", "pessoa": "angel", "local": "coatrack"}}
+{"id": "orig-098", "texto": "follow Robin from the waste basket to the office", "template": "followNameFromBeacToRoom", "gabarito": {"acao": "follow", "pessoa": "robin", "origem": "waste basket", "destino": "office"}}
+{"id": "orig-099", "texto": "lead the lying person from the coatrack to the side tables", "template": "guidePrsFromBeacToBeac", "gabarito": {"acao": "guide", "pessoa": "lying person", "origem": "coatrack", "destino": "side tables"}}
+{"id": "orig-100", "texto": "tell me what is the thinnest object on the refrigerator", "template": "tellObjPropOnPlcmt", "gabarito": {"acao": "tell_object_property", "local": "refrigerator", "atributo": "thinnest"}}

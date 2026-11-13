@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tcc-gpsr-plano"
+version = "1.0.0"
+description = "Avaliacao comparativa Rasa (intencao+entidade) vs LLM+RAG em comandos GPSR de UMA acao (gabarito plano)"
+requires-python = ">=3.10"
+dependencies = ["requests>=2.31", "scikit-learn>=1.4", "scipy>=1.12"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

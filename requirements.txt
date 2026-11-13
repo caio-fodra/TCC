@@ -1,0 +1,12 @@
+# Ambiente principal (Python 3.12): dominio, geracao, LLM+RAG, avaliacao e relatorio.
+#   python -m venv .venv
+#   .venv\Scripts\Activate.ps1      (Windows)   |   source .venv/bin/activate  (Linux/Mac)
+#   pip install -r requirements.txt
+#
+# O Rasa NAO entra aqui: exige Python 3.10 e vive num ambiente separado (requirements-rasa.txt).
+requests>=2.31
+scikit-learn>=1.4
+scipy>=1.12
+
+# Testes (opcional)
+pytest>=8.0

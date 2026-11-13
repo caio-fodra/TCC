@@ -1,0 +1,75 @@
+version: "3.1"
+
+intents:
+  - go_to
+  - take
+  - deliver
+  - find_object
+  - find_person
+  - meet
+  - greet
+  - follow
+  - guide
+  - count_objects
+  - count_people
+  - tell_person_info
+  - tell_object_property
+  - talk_info
+
+entities:
+  - objeto
+  - pessoa
+  - origem
+  - destino
+  - local
+  - atributo
+  - informacao
+
+slots:
+  objeto:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: objeto
+  pessoa:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: pessoa
+  origem:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: origem
+  destino:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: destino
+  local:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: local
+  atributo:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: atributo
+  informacao:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: informacao
+
+responses:
+  utter_noop:
+    - text: "noop"
+

@@ -1,0 +1,22 @@
+{
+  "arquitetura": "llm_rag",
+  "modelo": "qwen3:4b-instruct",
+  "url": "http://127.0.0.1:11434",
+  "n_documentos_kb": 84,
+  "rag_k": 34,
+  "cotas": {
+    "esquema": 2,
+    "acao": 14,
+    "objeto": 6,
+    "categoria": 3,
+    "comodo": 3,
+    "local": 4,
+    "pessoa": 3
+  },
+  "exemplos_few_shot": [
+    "Give me a sponge from the bed",
+    "go to the sofa then find a fruit",
+    "tell me how many drinks there are on the sofa",
+    "greet Robin in the office"
+  ]
+}

@@ -1,0 +1,857 @@
+[
+  {
+    "tipo": "esquema",
+    "nome": "formato",
+    "texto": "The output is a single JSON object with the fields: action, object, person, source, destination, location, attribute, information. 'action' is required; the others are optional. Values in lower case, without articles, categories in the singular. Recipient of 'bring/give me' = 'me'.",
+    "termos": [
+      "format",
+      "output",
+      "json",
+      "fields",
+      "action",
+      "object",
+      "person",
+      "source",
+      "destination",
+      "location",
+      "attribute",
+      "information"
+    ]
+  },
+  {
+    "tipo": "esquema",
+    "nome": "regras",
+    "texto": "Fill a field only when the command states it. 'it' refers to the last object; 'them' to the last person. source = where from; destination = where to/to whom. Never invent a value outside the context. Reply with the JSON only.",
+    "termos": [
+      "rules",
+      "filling",
+      "it",
+      "them",
+      "source",
+      "destination"
+    ]
+  },
+  {
+    "tipo": "acao",
+    "nome": "go_to",
+    "texto": "ACTION go_to: Move to a room or location. Required fields: destination. Optional: -.",
+    "termos": [
+      "go_to",
+      "go",
+      "navigate",
+      "move",
+      "head",
+      "walk"
+    ]
+  },
+  {
+    "tipo": "acao",
+    "nome": "take",
+    "texto": "ACTION take: Pick up an object, optionally from a source location. Required fields: object. Optional: source.",
+    "termos": [
+      "take",
+      "take",
+      "get",
+      "grasp",
+      "fetch",
+      "pick up"
+    ]
+  },
+  {
+    "tipo": "acao",
+    "nome": "deliver",
+    "texto": "ACTION deliver: Deliver an object to a person or location; 'bring/give me X from Y' is deliver with destination me. Required fields: object, destination. Optional: source, location.",
+    "termos": [
+      "deliver",
+      "bring",
+      "give",
+      "deliver",
+      "hand"
+    ]
+  },
+  {
+    "tipo": "acao",
+    "nome": "find_object",
+    "texto": "ACTION find_object: Locate an object, optionally in a room. Required fields: object. Optional: location.",
+    "termos": [
+      "find_object",
+      "find",
+      "locate",
+      "look for",
+      "search"
+    ]
+  },
+  {
+    "tipo": "acao",
+    "nome": "find_person",
+    "texto": "ACTION find_person: Locate a person, optionally in a room. Required fields: person. Optional: location.",
+    "termos": [
+      "find_person",
+      "find",
+      "locate",
+      "look for",
+      "meet"
+    ]
+  },
+  {
+    "tipo": "acao",
+    "nome": "meet",
+    "texto": "ACTION meet: Meet a person, optionally at a location. Required fields: person. Optional: location.",
+    "termos": [
+      "meet",
+      "meet",
+      "greet"
+    ]
+  },
+  {
+    "tipo": "acao",
+    "nome": "greet",
+    "texto": "ACTION greet: Greet a person, optionally in a room. Required fields: person. Optional: location.",
+    "termos": [
+      "greet",
+      "greet",
+      "salute",
+      "say hello",
+      "introduce yourself"
+    ]
+  },
+  {
+    "tipo": "acao",
+    "nome": "follow",
+    "texto": "ACTION follow: Follow a person, with optional source/destination/location. Required fields: person. Optional: source, destination, location.",
+    "termos": [
+      "follow",
+      "follow",
+      "accompany"
+    ]
+  },
+  {
+    "tipo": "acao",
+    "nome": "guide",
+    "texto": "ACTION guide: Guide a person to a destination, with optional source. Required fields: person, destination. Optional: source.",
+    "termos": [
+      "guide",
+      "guide",
+      "escort",
+      "lead",
+      "take"
+    ]
+  },
+  {
+    "tipo": "acao",
+    "nome": "count_objects",
+    "texto": "ACTION count_objects: Count the objects of a category at a location. Required fields: object, location. Optional: -.",
+    "termos": [
+      "count_objects",
+      "how many",
+      "count"
+    ]
+  },
+  {
+    "tipo": "acao",
+    "nome": "count_people",
+    "texto": "ACTION count_people: Count the people in a room, by pose/gesture or clothing. Required fields: location. Optional: person, attribute.",
+    "termos": [
+      "count_people",
+      "how many",
+      "count",
+      "wearing"
+    ]
+  },
+  {
+    "tipo": "acao",
+    "nome": "tell_person_info",
+    "texto": "ACTION tell_person_info: Tell a piece of information (name, pose, gesture) about a person. Required fields: information. Optional: location, source, destination.",
+    "termos": [
+      "tell_person_info",
+      "tell",
+      "name",
+      "pose",
+      "gesture"
+    ]
+  },
+  {
+    "tipo": "acao",
+    "nome": "tell_object_property",
+    "texto": "ACTION tell_object_property: Tell a property (biggest, smallest...) of an object/category at a location. Required fields: attribute, location. Optional: object.",
+    "termos": [
+      "tell_object_property",
+      "tell",
+      "what is",
+      "biggest",
+      "smallest",
+      "heaviest"
+    ]
+  },
+  {
+    "tipo": "acao",
+    "nome": "talk_info",
+    "texto": "ACTION talk_info: Say a topic to a person. Required fields: information. Optional: person, location.",
+    "termos": [
+      "talk_info",
+      "tell",
+      "say",
+      "talk"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "juice pack",
+    "texto": "object juice pack (category drink). Others in the category: cola, milk, orange juice, tropical juice, red wine, iced tea.",
+    "termos": [
+      "juice pack",
+      "drink",
+      "drinks"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "cola",
+    "texto": "object cola (category drink). Others in the category: juice pack, milk, orange juice, tropical juice, red wine, iced tea.",
+    "termos": [
+      "cola",
+      "drink",
+      "drinks"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "milk",
+    "texto": "object milk (category drink). Others in the category: juice pack, cola, orange juice, tropical juice, red wine, iced tea.",
+    "termos": [
+      "milk",
+      "drink",
+      "drinks"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "orange juice",
+    "texto": "object orange juice (category drink). Others in the category: juice pack, cola, milk, tropical juice, red wine, iced tea.",
+    "termos": [
+      "orange juice",
+      "drink",
+      "drinks"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "tropical juice",
+    "texto": "object tropical juice (category drink). Others in the category: juice pack, cola, milk, orange juice, red wine, iced tea.",
+    "termos": [
+      "tropical juice",
+      "drink",
+      "drinks"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "red wine",
+    "texto": "object red wine (category drink). Others in the category: juice pack, cola, milk, orange juice, tropical juice, iced tea.",
+    "termos": [
+      "red wine",
+      "drink",
+      "drinks"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "iced tea",
+    "texto": "object iced tea (category drink). Others in the category: juice pack, cola, milk, orange juice, tropical juice, red wine.",
+    "termos": [
+      "iced tea",
+      "drink",
+      "drinks"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "tennis ball",
+    "texto": "object tennis ball (category toy). Others in the category: rubiks cube, baseball, soccer ball, dice.",
+    "termos": [
+      "tennis ball",
+      "toy",
+      "toys"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "rubiks cube",
+    "texto": "object rubiks cube (category toy). Others in the category: tennis ball, baseball, soccer ball, dice.",
+    "termos": [
+      "rubiks cube",
+      "toy",
+      "toys"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "baseball",
+    "texto": "object baseball (category toy). Others in the category: tennis ball, rubiks cube, soccer ball, dice.",
+    "termos": [
+      "baseball",
+      "toy",
+      "toys"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "soccer ball",
+    "texto": "object soccer ball (category toy). Others in the category: tennis ball, rubiks cube, baseball, dice.",
+    "termos": [
+      "soccer ball",
+      "toy",
+      "toys"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "dice",
+    "texto": "object dice (category toy). Others in the category: tennis ball, rubiks cube, baseball, soccer ball.",
+    "termos": [
+      "dice",
+      "toy",
+      "toys"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "orange",
+    "texto": "object orange (category fruit). Others in the category: pear, peach, strawberry, apple, lemon, banana.",
+    "termos": [
+      "orange",
+      "fruit",
+      "fruits"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "pear",
+    "texto": "object pear (category fruit). Others in the category: orange, peach, strawberry, apple, lemon, banana.",
+    "termos": [
+      "pear",
+      "fruit",
+      "fruits"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "peach",
+    "texto": "object peach (category fruit). Others in the category: orange, pear, strawberry, apple, lemon, banana.",
+    "termos": [
+      "peach",
+      "fruit",
+      "fruits"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "strawberry",
+    "texto": "object strawberry (category fruit). Others in the category: orange, pear, peach, apple, lemon, banana.",
+    "termos": [
+      "strawberry",
+      "fruit",
+      "fruits"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "apple",
+    "texto": "object apple (category fruit). Others in the category: orange, pear, peach, strawberry, lemon, banana.",
+    "termos": [
+      "apple",
+      "fruit",
+      "fruits"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "lemon",
+    "texto": "object lemon (category fruit). Others in the category: orange, pear, peach, strawberry, apple, banana.",
+    "termos": [
+      "lemon",
+      "fruit",
+      "fruits"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "banana",
+    "texto": "object banana (category fruit). Others in the category: orange, pear, peach, strawberry, apple, lemon.",
+    "termos": [
+      "banana",
+      "fruit",
+      "fruits"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "plum",
+    "texto": "object plum (category fruit). Others in the category: orange, pear, peach, strawberry, apple, lemon.",
+    "termos": [
+      "plum",
+      "fruit",
+      "fruits"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "cornflakes",
+    "texto": "object cornflakes (category snack). Others in the category: pringles, cheezit.",
+    "termos": [
+      "cornflakes",
+      "snack",
+      "snacks"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "pringles",
+    "texto": "object pringles (category snack). Others in the category: cornflakes, cheezit.",
+    "termos": [
+      "pringles",
+      "snack",
+      "snacks"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "cheezit",
+    "texto": "object cheezit (category snack). Others in the category: cornflakes, pringles.",
+    "termos": [
+      "cheezit",
+      "snack",
+      "snacks"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "cup",
+    "texto": "object cup (category dish). Others in the category: bowl, fork, plate, knife, spoon.",
+    "termos": [
+      "cup",
+      "dish",
+      "dishes"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "bowl",
+    "texto": "object bowl (category dish). Others in the category: cup, fork, plate, knife, spoon.",
+    "termos": [
+      "bowl",
+      "dish",
+      "dishes"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "fork",
+    "texto": "object fork (category dish). Others in the category: cup, bowl, plate, knife, spoon.",
+    "termos": [
+      "fork",
+      "dish",
+      "dishes"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "plate",
+    "texto": "object plate (category dish). Others in the category: cup, bowl, fork, knife, spoon.",
+    "termos": [
+      "plate",
+      "dish",
+      "dishes"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "knife",
+    "texto": "object knife (category dish). Others in the category: cup, bowl, fork, plate, spoon.",
+    "termos": [
+      "knife",
+      "dish",
+      "dishes"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "spoon",
+    "texto": "object spoon (category dish). Others in the category: cup, bowl, fork, plate, knife.",
+    "termos": [
+      "spoon",
+      "dish",
+      "dishes"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "chocolate jello",
+    "texto": "object chocolate jello (category food). Others in the category: coffee grounds, mustard, tomato soup, tuna, strawberry jello, spam.",
+    "termos": [
+      "chocolate jello",
+      "food",
+      "food"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "coffee grounds",
+    "texto": "object coffee grounds (category food). Others in the category: chocolate jello, mustard, tomato soup, tuna, strawberry jello, spam.",
+    "termos": [
+      "coffee grounds",
+      "food",
+      "food"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "mustard",
+    "texto": "object mustard (category food). Others in the category: chocolate jello, coffee grounds, tomato soup, tuna, strawberry jello, spam.",
+    "termos": [
+      "mustard",
+      "food",
+      "food"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "tomato soup",
+    "texto": "object tomato soup (category food). Others in the category: chocolate jello, coffee grounds, mustard, tuna, strawberry jello, spam.",
+    "termos": [
+      "tomato soup",
+      "food",
+      "food"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "tuna",
+    "texto": "object tuna (category food). Others in the category: chocolate jello, coffee grounds, mustard, tomato soup, strawberry jello, spam.",
+    "termos": [
+      "tuna",
+      "food",
+      "food"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "strawberry jello",
+    "texto": "object strawberry jello (category food). Others in the category: chocolate jello, coffee grounds, mustard, tomato soup, tuna, spam.",
+    "termos": [
+      "strawberry jello",
+      "food",
+      "food"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "spam",
+    "texto": "object spam (category food). Others in the category: chocolate jello, coffee grounds, mustard, tomato soup, tuna, strawberry jello.",
+    "termos": [
+      "spam",
+      "food",
+      "food"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "sugar",
+    "texto": "object sugar (category food). Others in the category: chocolate jello, coffee grounds, mustard, tomato soup, tuna, strawberry jello.",
+    "termos": [
+      "sugar",
+      "food",
+      "food"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "cleanser",
+    "texto": "object cleanser (category cleaning supply). Others in the category: sponge.",
+    "termos": [
+      "cleanser",
+      "cleaning supply",
+      "cleaning supplies"
+    ]
+  },
+  {
+    "tipo": "objeto",
+    "nome": "sponge",
+    "texto": "object sponge (category cleaning supply). Others in the category: cleanser.",
+    "termos": [
+      "sponge",
+      "cleaning supply",
+      "cleaning supplies"
+    ]
+  },
+  {
+    "tipo": "categoria",
+    "nome": "drink",
+    "texto": "category drink (plural drinks). Use the singular. Members: juice pack, cola, milk, orange juice, tropical juice, red wine, iced tea.",
+    "termos": [
+      "drink",
+      "drinks"
+    ]
+  },
+  {
+    "tipo": "categoria",
+    "nome": "toy",
+    "texto": "category toy (plural toys). Use the singular. Members: tennis ball, rubiks cube, baseball, soccer ball, dice.",
+    "termos": [
+      "toy",
+      "toys"
+    ]
+  },
+  {
+    "tipo": "categoria",
+    "nome": "fruit",
+    "texto": "category fruit (plural fruits). Use the singular. Members: orange, pear, peach, strawberry, apple, lemon, banana, plum.",
+    "termos": [
+      "fruit",
+      "fruits"
+    ]
+  },
+  {
+    "tipo": "categoria",
+    "nome": "snack",
+    "texto": "category snack (plural snacks). Use the singular. Members: cornflakes, pringles, cheezit.",
+    "termos": [
+      "snack",
+      "snacks"
+    ]
+  },
+  {
+    "tipo": "categoria",
+    "nome": "dish",
+    "texto": "category dish (plural dishes). Use the singular. Members: cup, bowl, fork, plate, knife, spoon.",
+    "termos": [
+      "dish",
+      "dishes"
+    ]
+  },
+  {
+    "tipo": "categoria",
+    "nome": "food",
+    "texto": "category food (plural food). Use the singular. Members: chocolate jello, coffee grounds, mustard, tomato soup, tuna, strawberry jello, spam, sugar.",
+    "termos": [
+      "food",
+      "food"
+    ]
+  },
+  {
+    "tipo": "categoria",
+    "nome": "cleaning supply",
+    "texto": "category cleaning supply (plural cleaning supplies). Use the singular. Members: cleanser, sponge.",
+    "termos": [
+      "cleaning supply",
+      "cleaning supplies"
+    ]
+  },
+  {
+    "tipo": "comodo",
+    "nome": "bedroom",
+    "texto": "room bedroom.",
+    "termos": [
+      "bedroom"
+    ]
+  },
+  {
+    "tipo": "comodo",
+    "nome": "kitchen",
+    "texto": "room kitchen.",
+    "termos": [
+      "kitchen"
+    ]
+  },
+  {
+    "tipo": "comodo",
+    "nome": "office",
+    "texto": "room office.",
+    "termos": [
+      "office"
+    ]
+  },
+  {
+    "tipo": "comodo",
+    "nome": "living room",
+    "texto": "room living room.",
+    "termos": [
+      "living room"
+    ]
+  },
+  {
+    "tipo": "comodo",
+    "nome": "bathroom",
+    "texto": "room bathroom.",
+    "termos": [
+      "bathroom"
+    ]
+  },
+  {
+    "tipo": "local",
+    "nome": "bed",
+    "texto": "location bed (placement (where objects are put down)).",
+    "termos": [
+      "bed"
+    ]
+  },
+  {
+    "tipo": "local",
+    "nome": "shelf",
+    "texto": "location shelf (placement (where objects are put down)).",
+    "termos": [
+      "shelf"
+    ]
+  },
+  {
+    "tipo": "local",
+    "nome": "trashbin",
+    "texto": "location trashbin (navigation).",
+    "termos": [
+      "trashbin"
+    ]
+  },
+  {
+    "tipo": "local",
+    "nome": "potted plant",
+    "texto": "location potted plant (navigation).",
+    "termos": [
+      "potted plant"
+    ]
+  },
+  {
+    "tipo": "local",
+    "nome": "chairs",
+    "texto": "location chairs (navigation).",
+    "termos": [
+      "chairs"
+    ]
+  },
+  {
+    "tipo": "local",
+    "nome": "refrigerator",
+    "texto": "location refrigerator (placement (where objects are put down)).",
+    "termos": [
+      "refrigerator"
+    ]
+  },
+  {
+    "tipo": "local",
+    "nome": "cabinet",
+    "texto": "location cabinet (placement (where objects are put down)).",
+    "termos": [
+      "cabinet"
+    ]
+  },
+  {
+    "tipo": "local",
+    "nome": "coatrack",
+    "texto": "location coatrack (navigation).",
+    "termos": [
+      "coatrack"
+    ]
+  },
+  {
+    "tipo": "local",
+    "nome": "armchair",
+    "texto": "location armchair (navigation).",
+    "termos": [
+      "armchair"
+    ]
+  },
+  {
+    "tipo": "local",
+    "nome": "waste basket",
+    "texto": "location waste basket (navigation).",
+    "termos": [
+      "waste basket"
+    ]
+  },
+  {
+    "tipo": "local",
+    "nome": "storage rack",
+    "texto": "location storage rack (placement (where objects are put down)).",
+    "termos": [
+      "storage rack"
+    ]
+  },
+  {
+    "tipo": "local",
+    "nome": "side tables",
+    "texto": "location side tables (placement (where objects are put down)).",
+    "termos": [
+      "side tables"
+    ]
+  },
+  {
+    "tipo": "local",
+    "nome": "sofa",
+    "texto": "location sofa (placement (where objects are put down)).",
+    "termos": [
+      "sofa"
+    ]
+  },
+  {
+    "tipo": "local",
+    "nome": "entrance",
+    "texto": "location entrance (navigation).",
+    "termos": [
+      "entrance"
+    ]
+  },
+  {
+    "tipo": "pessoa",
+    "nome": "nomes",
+    "texto": "person names: Adel, Angel, Axel, Charlie, Jane, Jules, Morgan, Paris, Robin, Simone. Special value 'me' = the author of the command.",
+    "termos": [
+      "Adel",
+      "Angel",
+      "Axel",
+      "Charlie",
+      "Jane",
+      "Jules",
+      "Morgan",
+      "Paris",
+      "Robin",
+      "Simone",
+      "person",
+      "me"
+    ]
+  },
+  {
+    "tipo": "pessoa",
+    "nome": "descricoes",
+    "texto": "person by pose/gesture: waving person, person raising their left arm, person raising their right arm, person pointing to the left, person pointing to the right, sitting person, standing person, lying person.",
+    "termos": [
+      "person",
+      "waving",
+      "pointing",
+      "raising",
+      "sitting",
+      "standing",
+      "lying"
+    ]
+  },
+  {
+    "tipo": "pessoa",
+    "nome": "vestuario",
+    "texto": "person by clothing: 'person wearing <color> <garment>' (colors: blue, yellow, black, white, red, orange, gray; garments: t shirt, shirt, blouse, sweater, coat, jacket).",
+    "termos": [
+      "person",
+      "wearing",
+      "blue",
+      "yellow",
+      "black",
+      "white",
+      "red",
+      "orange",
+      "gray",
+      "t shirt",
+      "shirt",
+      "blouse",
+      "sweater",
+      "coat",
+      "jacket"
+    ]
+  }
+]

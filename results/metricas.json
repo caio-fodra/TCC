@@ -1,0 +1,556 @@
+{
+  "por_execucao": {
+    "llm_rag_original": {
+      "exata": {
+        "n": 100,
+        "acertos": 81,
+        "acuracia": 0.81,
+        "ic95_wilson": [
+          72.22115462093562,
+          87.48524849023126
+        ]
+      },
+      "por_campo": {
+        "acao": {
+          "suporte": 100,
+          "acertos": 92,
+          "acuracia": 0.92,
+          "precisao": 0.92,
+          "revocacao": 0.92,
+          "f1": 0.92,
+          "substituicoes": 8,
+          "omissoes": 0,
+          "insercoes": 0
+        },
+        "objeto": {
+          "suporte": 35,
+          "acertos": 31,
+          "acuracia": 0.8857142857142857,
+          "precisao": 0.8157894736842105,
+          "revocacao": 0.8857142857142857,
+          "f1": 0.8493150684931505,
+          "substituicoes": 4,
+          "omissoes": 0,
+          "insercoes": 3
+        },
+        "pessoa": {
+          "suporte": 39,
+          "acertos": 36,
+          "acuracia": 0.9230769230769231,
+          "precisao": 1.0,
+          "revocacao": 0.9230769230769231,
+          "f1": 0.9600000000000001,
+          "substituicoes": 0,
+          "omissoes": 3,
+          "insercoes": 0
+        },
+        "origem": {
+          "suporte": 27,
+          "acertos": 25,
+          "acuracia": 0.9259259259259259,
+          "precisao": 1.0,
+          "revocacao": 0.9259259259259259,
+          "f1": 0.9615384615384615,
+          "substituicoes": 0,
+          "omissoes": 2,
+          "insercoes": 0
+        },
+        "destino": {
+          "suporte": 29,
+          "acertos": 29,
+          "acuracia": 1.0,
+          "precisao": 0.9354838709677419,
+          "revocacao": 1.0,
+          "f1": 0.9666666666666666,
+          "substituicoes": 0,
+          "omissoes": 0,
+          "insercoes": 2
+        },
+        "local": {
+          "suporte": 60,
+          "acertos": 60,
+          "acuracia": 1.0,
+          "precisao": 0.967741935483871,
+          "revocacao": 1.0,
+          "f1": 0.9836065573770492,
+          "substituicoes": 0,
+          "omissoes": 0,
+          "insercoes": 2
+        },
+        "atributo": {
+          "suporte": 19,
+          "acertos": 17,
+          "acuracia": 0.8947368421052632,
+          "precisao": 0.8095238095238095,
+          "revocacao": 0.8947368421052632,
+          "f1": 0.8500000000000001,
+          "substituicoes": 2,
+          "omissoes": 0,
+          "insercoes": 2
+        },
+        "informacao": {
+          "suporte": 11,
+          "acertos": 9,
+          "acuracia": 0.8181818181818182,
+          "precisao": 0.8181818181818182,
+          "revocacao": 0.8181818181818182,
+          "f1": 0.8181818181818182,
+          "substituicoes": 2,
+          "omissoes": 0,
+          "insercoes": 0
+        },
+        "_f1_micro_entidades": {
+          "suporte": 220,
+          "acertos": 207,
+          "precisao": 0.9241071428571429,
+          "revocacao": 0.9409090909090909,
+          "f1": 0.9324324324324325
+        }
+      },
+      "latencia": {
+        "n": 100,
+        "excluidos": 0,
+        "media": 12.211117500999244,
+        "mediana": 10.685051150008803,
+        "desvio_padrao": 4.723833430729714,
+        "minimo": 5.02763899997808,
+        "maximo": 27.572247999953106,
+        "p95": 20.75665915495774
+      }
+    },
+    "llm_rag_parafrase": {
+      "exata": {
+        "n": 100,
+        "acertos": 85,
+        "acuracia": 0.85,
+        "ic95_wilson": [
+          76.71644040916763,
+          90.69401471634337
+        ]
+      },
+      "por_campo": {
+        "acao": {
+          "suporte": 100,
+          "acertos": 93,
+          "acuracia": 0.93,
+          "precisao": 0.93,
+          "revocacao": 0.93,
+          "f1": 0.93,
+          "substituicoes": 7,
+          "omissoes": 0,
+          "insercoes": 0
+        },
+        "objeto": {
+          "suporte": 35,
+          "acertos": 33,
+          "acuracia": 0.9428571428571428,
+          "precisao": 0.8918918918918919,
+          "revocacao": 0.9428571428571428,
+          "f1": 0.9166666666666667,
+          "substituicoes": 2,
+          "omissoes": 0,
+          "insercoes": 2
+        },
+        "pessoa": {
+          "suporte": 39,
+          "acertos": 38,
+          "acuracia": 0.9743589743589743,
+          "precisao": 1.0,
+          "revocacao": 0.9743589743589743,
+          "f1": 0.9870129870129869,
+          "substituicoes": 0,
+          "omissoes": 1,
+          "insercoes": 0
+        },
+        "origem": {
+          "suporte": 27,
+          "acertos": 26,
+          "acuracia": 0.9629629629629629,
+          "precisao": 1.0,
+          "revocacao": 0.9629629629629629,
+          "f1": 0.9811320754716981,
+          "substituicoes": 0,
+          "omissoes": 1,
+          "insercoes": 0
+        },
+        "destino": {
+          "suporte": 29,
+          "acertos": 29,
+          "acuracia": 1.0,
+          "precisao": 0.9666666666666667,
+          "revocacao": 1.0,
+          "f1": 0.983050847457627,
+          "substituicoes": 0,
+          "omissoes": 0,
+          "insercoes": 1
+        },
+        "local": {
+          "suporte": 60,
+          "acertos": 60,
+          "acuracia": 1.0,
+          "precisao": 0.9836065573770492,
+          "revocacao": 1.0,
+          "f1": 0.9917355371900827,
+          "substituicoes": 0,
+          "omissoes": 0,
+          "insercoes": 1
+        },
+        "atributo": {
+          "suporte": 19,
+          "acertos": 17,
+          "acuracia": 0.8947368421052632,
+          "precisao": 0.85,
+          "revocacao": 0.8947368421052632,
+          "f1": 0.8717948717948718,
+          "substituicoes": 2,
+          "omissoes": 0,
+          "insercoes": 1
+        },
+        "informacao": {
+          "suporte": 11,
+          "acertos": 6,
+          "acuracia": 0.5454545454545454,
+          "precisao": 0.5454545454545454,
+          "revocacao": 0.5454545454545454,
+          "f1": 0.5454545454545454,
+          "substituicoes": 5,
+          "omissoes": 0,
+          "insercoes": 0
+        },
+        "_f1_micro_entidades": {
+          "suporte": 220,
+          "acertos": 209,
+          "precisao": 0.9372197309417041,
+          "revocacao": 0.95,
+          "f1": 0.9435665914221218
+        }
+      },
+      "latencia": {
+        "n": 100,
+        "excluidos": 0,
+        "media": 9.968731934999814,
+        "mediana": 9.59529494997696,
+        "desvio_padrao": 3.521120370503079,
+        "minimo": 4.35662490001414,
+        "maximo": 19.854261100001168,
+        "p95": 15.49424513997219
+      }
+    },
+    "rasa_original": {
+      "exata": {
+        "n": 100,
+        "acertos": 100,
+        "acuracia": 1.0,
+        "ic95_wilson": [
+          96.30065017930143,
+          100.0
+        ]
+      },
+      "por_campo": {
+        "acao": {
+          "suporte": 100,
+          "acertos": 100,
+          "acuracia": 1.0,
+          "precisao": 1.0,
+          "revocacao": 1.0,
+          "f1": 1.0,
+          "substituicoes": 0,
+          "omissoes": 0,
+          "insercoes": 0
+        },
+        "objeto": {
+          "suporte": 35,
+          "acertos": 35,
+          "acuracia": 1.0,
+          "precisao": 1.0,
+          "revocacao": 1.0,
+          "f1": 1.0,
+          "substituicoes": 0,
+          "omissoes": 0,
+          "insercoes": 0
+        },
+        "pessoa": {
+          "suporte": 39,
+          "acertos": 39,
+          "acuracia": 1.0,
+          "precisao": 1.0,
+          "revocacao": 1.0,
+          "f1": 1.0,
+          "substituicoes": 0,
+          "omissoes": 0,
+          "insercoes": 0
+        },
+        "origem": {
+          "suporte": 27,
+          "acertos": 27,
+          "acuracia": 1.0,
+          "precisao": 1.0,
+          "revocacao": 1.0,
+          "f1": 1.0,
+          "substituicoes": 0,
+          "omissoes": 0,
+          "insercoes": 0
+        },
+        "destino": {
+          "suporte": 29,
+          "acertos": 29,
+          "acuracia": 1.0,
+          "precisao": 1.0,
+          "revocacao": 1.0,
+          "f1": 1.0,
+          "substituicoes": 0,
+          "omissoes": 0,
+          "insercoes": 0
+        },
+        "local": {
+          "suporte": 60,
+          "acertos": 60,
+          "acuracia": 1.0,
+          "precisao": 1.0,
+          "revocacao": 1.0,
+          "f1": 1.0,
+          "substituicoes": 0,
+          "omissoes": 0,
+          "insercoes": 0
+        },
+        "atributo": {
+          "suporte": 19,
+          "acertos": 19,
+          "acuracia": 1.0,
+          "precisao": 1.0,
+          "revocacao": 1.0,
+          "f1": 1.0,
+          "substituicoes": 0,
+          "omissoes": 0,
+          "insercoes": 0
+        },
+        "informacao": {
+          "suporte": 11,
+          "acertos": 11,
+          "acuracia": 1.0,
+          "precisao": 1.0,
+          "revocacao": 1.0,
+          "f1": 1.0,
+          "substituicoes": 0,
+          "omissoes": 0,
+          "insercoes": 0
+        },
+        "_f1_micro_entidades": {
+          "suporte": 220,
+          "acertos": 220,
+          "precisao": 1.0,
+          "revocacao": 1.0,
+          "f1": 1.0
+        }
+      },
+      "latencia": {
+        "n": 100,
+        "excluidos": 0,
+        "media": 0.012127644999418407,
+        "mediana": 0.012075650010956451,
+        "desvio_padrao": 0.0011152200715959216,
+        "minimo": 0.010044900001958013,
+        "maximo": 0.015914199990220368,
+        "p95": 0.014013849987532011
+      }
+    },
+    "rasa_parafrase": {
+      "exata": {
+        "n": 100,
+        "acertos": 39,
+        "acuracia": 0.39,
+        "ic95_wilson": [
+          30.01687400639441,
+          48.79698295415926
+        ]
+      },
+      "por_campo": {
+        "acao": {
+          "suporte": 100,
+          "acertos": 78,
+          "acuracia": 0.78,
+          "precisao": 0.78,
+          "revocacao": 0.78,
+          "f1": 0.78,
+          "substituicoes": 22,
+          "omissoes": 0,
+          "insercoes": 0
+        },
+        "objeto": {
+          "suporte": 35,
+          "acertos": 33,
+          "acuracia": 0.9428571428571428,
+          "precisao": 0.559322033898305,
+          "revocacao": 0.9428571428571428,
+          "f1": 0.7021276595744681,
+          "substituicoes": 2,
+          "omissoes": 0,
+          "insercoes": 24
+        },
+        "pessoa": {
+          "suporte": 39,
+          "acertos": 37,
+          "acuracia": 0.9487179487179487,
+          "precisao": 0.7551020408163265,
+          "revocacao": 0.9487179487179487,
+          "f1": 0.8409090909090908,
+          "substituicoes": 2,
+          "omissoes": 0,
+          "insercoes": 10
+        },
+        "origem": {
+          "suporte": 27,
+          "acertos": 24,
+          "acuracia": 0.8888888888888888,
+          "precisao": 0.75,
+          "revocacao": 0.8888888888888888,
+          "f1": 0.8135593220338982,
+          "substituicoes": 1,
+          "omissoes": 2,
+          "insercoes": 7
+        },
+        "destino": {
+          "suporte": 29,
+          "acertos": 21,
+          "acuracia": 0.7241379310344828,
+          "precisao": 0.84,
+          "revocacao": 0.7241379310344828,
+          "f1": 0.7777777777777777,
+          "substituicoes": 1,
+          "omissoes": 7,
+          "insercoes": 3
+        },
+        "local": {
+          "suporte": 60,
+          "acertos": 51,
+          "acuracia": 0.85,
+          "precisao": 0.8095238095238095,
+          "revocacao": 0.85,
+          "f1": 0.8292682926829269,
+          "substituicoes": 6,
+          "omissoes": 3,
+          "insercoes": 6
+        },
+        "atributo": {
+          "suporte": 19,
+          "acertos": 19,
+          "acuracia": 1.0,
+          "precisao": 0.95,
+          "revocacao": 1.0,
+          "f1": 0.9743589743589743,
+          "substituicoes": 0,
+          "omissoes": 0,
+          "insercoes": 1
+        },
+        "informacao": {
+          "suporte": 11,
+          "acertos": 5,
+          "acuracia": 0.45454545454545453,
+          "precisao": 0.19230769230769232,
+          "revocacao": 0.45454545454545453,
+          "f1": 0.27027027027027023,
+          "substituicoes": 6,
+          "omissoes": 0,
+          "insercoes": 15
+        },
+        "_f1_micro_entidades": {
+          "suporte": 220,
+          "acertos": 190,
+          "precisao": 0.6934306569343066,
+          "revocacao": 0.8636363636363636,
+          "f1": 0.7692307692307693
+        }
+      },
+      "latencia": {
+        "n": 100,
+        "excluidos": 0,
+        "media": 0.012336532002664172,
+        "mediana": 0.012284950003959239,
+        "desvio_padrao": 0.0012510421703433173,
+        "minimo": 0.009959699993487448,
+        "maximo": 0.01676440000301227,
+        "p95": 0.014238120004301892
+      }
+    }
+  },
+  "estabilidade": {
+    "rasa": {
+      "acuracia_exata": {
+        "original": 1.0,
+        "parafrase": 0.39,
+        "delta_pp": 61.0
+      }
+    },
+    "llm_rag": {
+      "acuracia_exata": {
+        "original": 0.81,
+        "parafrase": 0.85,
+        "delta_pp": -3.9999999999999925
+      }
+    }
+  },
+  "testes": {
+    "correspondencia_exata": [
+      {
+        "teste": "mcnemar",
+        "n_pares": 19,
+        "so_a": 19,
+        "so_b": 0,
+        "p_bruto": 3.814697265625e-06,
+        "comparacao": "Rasa vs LLM+RAG em C_original",
+        "p_holm": 7.62939453125e-06,
+        "significativo_5pct": true
+      },
+      {
+        "teste": "mcnemar",
+        "n_pares": 50,
+        "so_a": 2,
+        "so_b": 48,
+        "p_bruto": 2.2666313270747196e-12,
+        "comparacao": "Rasa vs LLM+RAG em C_parafrase",
+        "p_holm": 6.799893981224159e-12,
+        "significativo_5pct": true
+      },
+      {
+        "teste": "mcnemar",
+        "n_pares": 61,
+        "so_a": 61,
+        "so_b": 0,
+        "p_bruto": 8.673617379884035e-19,
+        "comparacao": "canonico vs parafrase (rasa)",
+        "p_holm": 3.469446951953614e-18,
+        "significativo_5pct": true
+      },
+      {
+        "teste": "mcnemar",
+        "n_pares": 14,
+        "so_a": 5,
+        "so_b": 9,
+        "p_bruto": 0.4239501953125,
+        "comparacao": "canonico vs parafrase (llm_rag)",
+        "p_holm": 0.4239501953125,
+        "significativo_5pct": false
+      }
+    ],
+    "latencia": [
+      {
+        "teste": "wilcoxon",
+        "n": 100,
+        "estatistica": 0.0,
+        "p_bruto": 3.8965598450959084e-18,
+        "comparacao": "Rasa vs LLM+RAG em C_original",
+        "p_holm": 7.793119690191817e-18,
+        "significativo_5pct": true
+      },
+      {
+        "teste": "wilcoxon",
+        "n": 100,
+        "estatistica": 0.0,
+        "p_bruto": 3.8965598450959084e-18,
+        "comparacao": "Rasa vs LLM+RAG em C_parafrase",
+        "p_holm": 7.793119690191817e-18,
+        "significativo_5pct": true
+      }
+    ]
+  }
+}

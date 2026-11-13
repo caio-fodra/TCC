@@ -1,0 +1,8 @@
+# Ambiente do Rasa (Python 3.10 -- NAO 3.12).
+# O Rasa 3.6 depende de TensorFlow, que limita a versao de Python; instalar no 3.12 falha.
+# Por isso a arquitetura Rasa roda em ambiente separado e e consultada por HTTP.
+#
+#   py -3.10 -m venv .venv-rasa
+#   .venv-rasa\Scripts\Activate.ps1
+#   pip install -r requirements-rasa.txt
+rasa~=3.6.20

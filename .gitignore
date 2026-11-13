@@ -1,0 +1,29 @@
+# Ambientes virtuais
+.venv/
+.venv-rasa/
+venv/
+env/
+
+# Caches e artefatos do Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Rasa: modelos treinados e cache
+rasa_project/models/
+rasa_project/.rasa/
+
+# Ollama: modelos baixados
+.ollama/
+*.gguf
+
+# Segredos e logs locais
+.env
+*.log
+
+# Arquivos de terceiros sem licença publicada (ver README)
+vendor/robocupathome_generator/
+data/domain/

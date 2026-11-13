@@ -1,0 +1,23 @@
+DOMAIN CONTEXT
+- The output is a single JSON object with the fields: action, object, person, source, destination, location, attribute, information. 'action' is required; the others are optional. Values in lower case, without articles, categories in the singular. Recipient of 'bring/give me' = 'me'.
+- Fill a field only when the command states it. 'it' refers to the last object; 'them' to the last person. source = where from; destination = where to/to whom. Never invent a value outside the context. Reply with the JSON only.
+- ACTION go_to: Move to a room or location. Required fields: destination. Optional: -.
+- ACTION take: Pick up an object, optionally from a source location. Required fields: object. Optional: source.
+- ACTION deliver: Deliver an object to a person or location; 'bring/give me X from Y' is deliver with destination me. Required fields: object, destination. Optional: source, location.
+- ACTION find_object: Locate an object, optionally in a room. Required fields: object. Optional: location.
+- ACTION find_person: Locate a person, optionally in a room. Required fields: person. Optional: location.
+- ACTION meet: Meet a person, optionally at a location. Required fields: person. Optional: location.
+- ACTION greet: Greet a person, optionally in a room. Required fields: person. Optional: location.
+- ACTION follow: Follow a person, with optional source/destination/location. Required fields: person. Optional: source, destination, location.
+- ACTION guide: Guide a person to a destination, with optional source. Required fields: person, destination. Optional: source.
+- ACTION count_objects: Count the objects of a category at a location. Required fields: object, location. Optional: -.
+- ACTION count_people: Count the people in a room, by pose/gesture or clothing. Required fields: location. Optional: person, attribute.
+- ACTION tell_person_info: Tell a piece of information (name, pose, gesture) about a person. Required fields: information. Optional: location, source, destination.
+- ACTION tell_object_property: Tell a property (biggest, smallest...) of an object/category at a location. Required fields: attribute, location. Optional: object.
+- ACTION talk_info: Say a topic to a person. Required fields: information. Optional: person, location.
+- object peach (category fruit). Others in the category: orange, pear, strawberry, apple, lemon, banana.
+- location shelf (placement (where objects are put down)).
+
+COMMAND TO INTERPRET
+"take a peach from the shelf"
+Reply with the JSON object only.

@@ -1,0 +1,29 @@
+{
+  "sistema": {
+    "so": "Windows-11-10.0.26300-SP0",
+    "arquitetura": "AMD64",
+    "processador": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel",
+    "processador_modelo": "Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz",
+    "memoria_instalada_gb": 12,
+    "hardware_registrado_em": "2026-11-13, depois da execução de 04/11, na mesma máquina (declaração do autor)",
+    "python": "3.12.4",
+    "gpu": "nao detectada"
+  },
+  "configuracao": {
+    "seed": 42,
+    "seed_treino_rasa": 20260622,
+    "modelo_arquitetura": "qwen3:4b-instruct",
+    "num_ctx": 8192,
+    "rag_k": 34,
+    "ollama_url": "http://127.0.0.1:11434",
+    "rasa_url": "http://127.0.0.1:5005"
+  },
+  "versao_experimento": "plana-a2",
+  "arquiteturas_medidas": [
+    "rasa"
+  ],
+  "subconjuntos": [
+    "original",
+    "parafrase"
+  ]
+}
