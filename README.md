@@ -120,6 +120,7 @@ python -m tcc.generate_dataset --self-check -n 5000   # confere a consistência 
 - Elas foram geradas pelo *workflow* `scripts/gerar_parafrases.workflow.js`, executado no Claude Code com agentes do modelo Claude Opus 5.5 (`PARAFRASEADOR` em `src/tcc/paraphrase.py`).
 - A entrada do *workflow* é a saída de `python -m tcc.paraphrase --itens`.
 - A saída está em `data/parafrases_claude.jsonl`, e o registro das duas execuções, em `data/parafrases_claude_registro.json`.
+- A docstring da função `problemas_de_verbo` (`src/tcc/paraphrase.py`) diz que "a revisao manual continua sendo a garantia final do sentido", mas essa revisão não foi feita (Seção 3.2.4 do TCC).
 - O passo seguinte confere as regras verificáveis e grava `data/comandos_parafrase.jsonl`:
 
 ```bash
